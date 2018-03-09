@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7EB977E53CD66BD5EEE5BD86 /* libPods-OnlyLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F21573D26BA18D647D430EA /* libPods-OnlyLive.a */; };
+		CD148D3220527AD300F53392 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CD148D2F20527AD300F53392 /* UIView+YYAdd.m */; };
+		CD148D3320527AD300F53392 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CD148D3020527AD300F53392 /* UIControl+YYAdd.m */; };
 		CD937A8820525A1D002B388A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A8720525A1D002B388A /* AppDelegate.m */; };
 		CD937A8B20525A1E002B388A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A8A20525A1E002B388A /* ViewController.m */; };
 		CD937A8E20525A1E002B388A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD937A8C20525A1E002B388A /* Main.storyboard */; };
@@ -15,6 +18,8 @@
 		CD937A9620525A1E002B388A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A9520525A1E002B388A /* main.m */; };
 		CD937AA020525A1E002B388A /* OnlyLiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A9F20525A1E002B388A /* OnlyLiveTests.m */; };
 		CD937AAB20525A1E002B388A /* OnlyLiveUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937AAA20525A1E002B388A /* OnlyLiveUITests.m */; };
+		CD937ABA20526C36002B388A /* OnlyLiveSession.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937AB920526C36002B388A /* OnlyLiveSession.m */; };
+		CD937ABD205273F0002B388A /* OnlyLiveView.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937ABC205273F0002B388A /* OnlyLiveView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12E93DE74A310CDB91072FBC /* Pods-OnlyLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlyLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnlyLive/Pods-OnlyLive.debug.xcconfig"; sourceTree = "<group>"; };
+		7F21573D26BA18D647D430EA /* libPods-OnlyLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnlyLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD148D2E20527AD300F53392 /* UIControl+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+YYAdd.h"; sourceTree = "<group>"; };
+		CD148D2F20527AD300F53392 /* UIView+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+YYAdd.m"; sourceTree = "<group>"; };
+		CD148D3020527AD300F53392 /* UIControl+YYAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+YYAdd.m"; sourceTree = "<group>"; };
+		CD148D3120527AD300F53392 /* UIView+YYAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+YYAdd.h"; sourceTree = "<group>"; };
 		CD937A8320525A1D002B388A /* OnlyLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlyLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD937A8620525A1D002B388A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD937A8720525A1D002B388A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +62,12 @@
 		CD937AA620525A1E002B388A /* OnlyLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlyLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD937AAA20525A1E002B388A /* OnlyLiveUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyLiveUITests.m; sourceTree = "<group>"; };
 		CD937AAC20525A1E002B388A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD937AB820526C36002B388A /* OnlyLiveSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlyLiveSession.h; sourceTree = "<group>"; };
+		CD937AB920526C36002B388A /* OnlyLiveSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyLiveSession.m; sourceTree = "<group>"; };
+		CD937ABB205273F0002B388A /* OnlyLiveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OnlyLiveView.h; sourceTree = "<group>"; };
+		CD937ABC205273F0002B388A /* OnlyLiveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlyLiveView.m; sourceTree = "<group>"; };
+		CD937ABF205274C2002B388A /* OnlyCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OnlyCommonDefine.h; sourceTree = "<group>"; };
+		F3790CA7ACCC84C4124F642A /* Pods-OnlyLive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlyLive.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnlyLive/Pods-OnlyLive.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EB977E53CD66BD5EEE5BD86 /* libPods-OnlyLive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,13 +96,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FC1F8D74952C9154098A500 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F21573D26BA18D647D430EA /* libPods-OnlyLive.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD148D2D20527AD300F53392 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				CD148D2E20527AD300F53392 /* UIControl+YYAdd.h */,
+				CD148D2F20527AD300F53392 /* UIView+YYAdd.m */,
+				CD148D3020527AD300F53392 /* UIControl+YYAdd.m */,
+				CD148D3120527AD300F53392 /* UIView+YYAdd.h */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
 		CD937A7A20525A1D002B388A = {
 			isa = PBXGroup;
 			children = (
+				CD148D2D20527AD300F53392 /* category */,
 				CD937A8520525A1D002B388A /* OnlyLive */,
 				CD937A9E20525A1E002B388A /* OnlyLiveTests */,
 				CD937AA920525A1E002B388A /* OnlyLiveUITests */,
 				CD937A8420525A1D002B388A /* Products */,
+				D6E206684F0947B7D39DA66A /* Pods */,
+				4FC1F8D74952C9154098A500 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +145,11 @@
 				CD937A8720525A1D002B388A /* AppDelegate.m */,
 				CD937A8920525A1E002B388A /* ViewController.h */,
 				CD937A8A20525A1E002B388A /* ViewController.m */,
+				CD937AB820526C36002B388A /* OnlyLiveSession.h */,
+				CD937AB920526C36002B388A /* OnlyLiveSession.m */,
+				CD937ABB205273F0002B388A /* OnlyLiveView.h */,
+				CD937ABC205273F0002B388A /* OnlyLiveView.m */,
+				CD937ABF205274C2002B388A /* OnlyCommonDefine.h */,
 				CD937A8C20525A1E002B388A /* Main.storyboard */,
 				CD937A8F20525A1E002B388A /* Assets.xcassets */,
 				CD937A9120525A1E002B388A /* LaunchScreen.storyboard */,
@@ -132,6 +177,15 @@
 			path = OnlyLiveUITests;
 			sourceTree = "<group>";
 		};
+		D6E206684F0947B7D39DA66A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12E93DE74A310CDB91072FBC /* Pods-OnlyLive.debug.xcconfig */,
+				F3790CA7ACCC84C4124F642A /* Pods-OnlyLive.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD937AAF20525A1E002B388A /* Build configuration list for PBXNativeTarget "OnlyLive" */;
 			buildPhases = (
+				09C9DC53263A1A2056B5CFFE /* [CP] Check Pods Manifest.lock */,
 				CD937A7F20525A1D002B388A /* Sources */,
 				CD937A8020525A1D002B388A /* Frameworks */,
 				CD937A8120525A1D002B388A /* Resources */,
+				99813BDC64138F97B4E5E0D0 /* [CP] Embed Pods Frameworks */,
+				65F818C3E23A7A1EE40766AD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,6 +251,7 @@
 		CD937A7B20525A1D002B388A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = Only;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = only;
 				TargetAttributes = {
@@ -260,6 +318,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09C9DC53263A1A2056B5CFFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OnlyLive-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65F818C3E23A7A1EE40766AD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlyLive/Pods-OnlyLive-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		99813BDC64138F97B4E5E0D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlyLive/Pods-OnlyLive-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CD937A7F20525A1D002B388A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -267,6 +376,10 @@
 			files = (
 				CD937A8B20525A1E002B388A /* ViewController.m in Sources */,
 				CD937A9620525A1E002B388A /* main.m in Sources */,
+				CD148D3220527AD300F53392 /* UIView+YYAdd.m in Sources */,
+				CD148D3320527AD300F53392 /* UIControl+YYAdd.m in Sources */,
+				CD937ABD205273F0002B388A /* OnlyLiveView.m in Sources */,
+				CD937ABA20526C36002B388A /* OnlyLiveSession.m in Sources */,
 				CD937A8820525A1D002B388A /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,13 +541,15 @@
 		};
 		CD937AB020525A1E002B388A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12E93DE74A310CDB91072FBC /* Pods-OnlyLive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8NLAUJVW9U;
+				DEVELOPMENT_TEAM = 29HA8N9RQ5;
 				INFOPLIST_FILE = OnlyLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = comCamera.Le.OnlyLive;
+				PRODUCT_BUNDLE_IDENTIFIER = comCamer111.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -442,13 +557,15 @@
 		};
 		CD937AB120525A1E002B388A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3790CA7ACCC84C4124F642A /* Pods-OnlyLive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8NLAUJVW9U;
+				DEVELOPMENT_TEAM = 29HA8N9RQ5;
 				INFOPLIST_FILE = OnlyLive/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = comCamera.Le.OnlyLive;
+				PRODUCT_BUNDLE_IDENTIFIER = comCamer111.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
