@@ -7,7 +7,7 @@
 //
 
 #import "OnlyLiveSession.h"
-#import <LFLiveKit.h>
+#import "LFLiveKit.h"
 #import "CaptureFaceService.h"
 
 inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
