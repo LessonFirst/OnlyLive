@@ -209,6 +209,28 @@
 		CD8E3ED2205A78F9001087A9 /* error.c in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3E07205A78F8001087A9 /* error.c */; };
 		CD8E3ED3205A78F9001087A9 /* parseurl.c in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3E0A205A78F8001087A9 /* parseurl.c */; };
 		CD8E3ED4205A78F9001087A9 /* amf.c in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3E0B205A78F8001087A9 /* amf.c */; };
+		CD8E3F18205A7F30001087A9 /* scratches.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F03205A7F30001087A9 /* scratches.png */; };
+		CD8E3F19205A7F30001087A9 /* lena.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F04205A7F30001087A9 /* lena.jpg */; };
+		CD8E3F1A205A7F30001087A9 /* Processing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3F05205A7F30001087A9 /* Processing.cpp */; };
+		CD8E3F1B205A7F30001087A9 /* lbpcascade_frontalface.xml in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F06205A7F30001087A9 /* lbpcascade_frontalface.xml */; };
+		CD8E3F1C205A7F30001087A9 /* haarcascade_mcs_eyepair_big.xml in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F07205A7F30001087A9 /* haarcascade_mcs_eyepair_big.xml */; };
+		CD8E3F1D205A7F30001087A9 /* FaceAnimator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3F09205A7F30001087A9 /* FaceAnimator.cpp */; };
+		CD8E3F1E205A7F30001087A9 /* PostcardPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3F0A205A7F30001087A9 /* PostcardPrinter.cpp */; };
+		CD8E3F1F205A7F30001087A9 /* Processing_Accelerate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3F0B205A7F30001087A9 /* Processing_Accelerate.cpp */; };
+		CD8E3F20205A7F30001087A9 /* mustache.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F0C205A7F30001087A9 /* mustache.png */; };
+		CD8E3F21205A7F30001087A9 /* haarcascade_mcs_mouth.xml in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F0E205A7F30001087A9 /* haarcascade_mcs_mouth.xml */; };
+		CD8E3F22205A7F30001087A9 /* RetroFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3F0F205A7F30001087A9 /* RetroFilter.cpp */; };
+		CD8E3F23205A7F30001087A9 /* fuzzy_border.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F10205A7F30001087A9 /* fuzzy_border.png */; };
+		CD8E3F24205A7F30001087A9 /* texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F13205A7F30001087A9 /* texture.jpg */; };
+		CD8E3F25205A7F30001087A9 /* Processing_NEON.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CD8E3F15205A7F30001087A9 /* Processing_NEON.cpp */; };
+		CD8E3F26205A7F30001087A9 /* text.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F16205A7F30001087A9 /* text.png */; };
+		CD8E3F27205A7F30001087A9 /* glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = CD8E3F17205A7F30001087A9 /* glasses.png */; };
+		CD8E3F29205A811A001087A9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E3F28205A811A001087A9 /* QuartzCore.framework */; };
+		CD8E3F2B205A8121001087A9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E3F2A205A8121001087A9 /* CoreImage.framework */; };
+		CD8E3F2D205A812D001087A9 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E3F2C205A812D001087A9 /* Accelerate.framework */; };
+		CD8E3F2F205A8135001087A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E3F2E205A8135001087A9 /* UIKit.framework */; };
+		CD8E3F31205A813C001087A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E3F30205A813C001087A9 /* Foundation.framework */; };
+		CD8E3F33205A8142001087A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E3F32205A8142001087A9 /* CoreGraphics.framework */; };
 		CD937A8820525A1D002B388A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A8720525A1D002B388A /* AppDelegate.m */; };
 		CD937A8B20525A1E002B388A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A8A20525A1E002B388A /* ViewController.m */; };
 		CD937A8E20525A1E002B388A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD937A8C20525A1E002B388A /* Main.storyboard */; };
@@ -664,6 +686,33 @@
 		CD8E3E0A205A78F8001087A9 /* parseurl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parseurl.c; sourceTree = "<group>"; };
 		CD8E3E0B205A78F8001087A9 /* amf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = amf.c; sourceTree = "<group>"; };
 		CD8E3E0C205A78F8001087A9 /* rtmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtmp.h; sourceTree = "<group>"; };
+		CD8E3F03205A7F30001087A9 /* scratches.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scratches.png; sourceTree = "<group>"; };
+		CD8E3F04205A7F30001087A9 /* lena.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lena.jpg; sourceTree = "<group>"; };
+		CD8E3F05205A7F30001087A9 /* Processing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing.cpp; sourceTree = "<group>"; };
+		CD8E3F06205A7F30001087A9 /* lbpcascade_frontalface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = lbpcascade_frontalface.xml; sourceTree = "<group>"; };
+		CD8E3F07205A7F30001087A9 /* haarcascade_mcs_eyepair_big.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_eyepair_big.xml; sourceTree = "<group>"; };
+		CD8E3F08205A7F30001087A9 /* RetroFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RetroFilter.hpp; sourceTree = "<group>"; };
+		CD8E3F09205A7F30001087A9 /* FaceAnimator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FaceAnimator.cpp; sourceTree = "<group>"; };
+		CD8E3F0A205A7F30001087A9 /* PostcardPrinter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PostcardPrinter.cpp; sourceTree = "<group>"; };
+		CD8E3F0B205A7F30001087A9 /* Processing_Accelerate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing_Accelerate.cpp; sourceTree = "<group>"; };
+		CD8E3F0C205A7F30001087A9 /* mustache.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mustache.png; sourceTree = "<group>"; };
+		CD8E3F0D205A7F30001087A9 /* CvEffects-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CvEffects-Prefix.pch"; sourceTree = "<group>"; };
+		CD8E3F0E205A7F30001087A9 /* haarcascade_mcs_mouth.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_mcs_mouth.xml; sourceTree = "<group>"; };
+		CD8E3F0F205A7F30001087A9 /* RetroFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RetroFilter.cpp; sourceTree = "<group>"; };
+		CD8E3F10205A7F30001087A9 /* fuzzy_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fuzzy_border.png; sourceTree = "<group>"; };
+		CD8E3F11205A7F30001087A9 /* FaceAnimator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FaceAnimator.hpp; sourceTree = "<group>"; };
+		CD8E3F12205A7F30001087A9 /* PostcardPrinter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PostcardPrinter.hpp; sourceTree = "<group>"; };
+		CD8E3F13205A7F30001087A9 /* texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = texture.jpg; sourceTree = "<group>"; };
+		CD8E3F14205A7F30001087A9 /* Processing.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Processing.hpp; sourceTree = "<group>"; };
+		CD8E3F15205A7F30001087A9 /* Processing_NEON.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Processing_NEON.cpp; sourceTree = "<group>"; };
+		CD8E3F16205A7F30001087A9 /* text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text.png; sourceTree = "<group>"; };
+		CD8E3F17205A7F30001087A9 /* glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = glasses.png; sourceTree = "<group>"; };
+		CD8E3F28205A811A001087A9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CD8E3F2A205A8121001087A9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		CD8E3F2C205A812D001087A9 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CD8E3F2E205A8135001087A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CD8E3F30205A813C001087A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CD8E3F32205A8142001087A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		CD937A8320525A1D002B388A /* OnlyLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlyLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD937A8620525A1D002B388A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD937A8720525A1D002B388A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -713,6 +762,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8E3F33205A8142001087A9 /* CoreGraphics.framework in Frameworks */,
+				CD8E3F31205A813C001087A9 /* Foundation.framework in Frameworks */,
+				CD8E3F2F205A8135001087A9 /* UIKit.framework in Frameworks */,
+				CD8E3F2D205A812D001087A9 /* Accelerate.framework in Frameworks */,
+				CD8E3F2B205A8121001087A9 /* CoreImage.framework in Frameworks */,
+				CD8E3F29205A811A001087A9 /* QuartzCore.framework in Frameworks */,
 				CD8E3C63205A77DF001087A9 /* opencv2.framework in Frameworks */,
 				CDE89B23205A5F1700B8B333 /* AssetsLibrary.framework in Frameworks */,
 				CDE89B21205A5F0A00B8B333 /* CoreVideo.framework in Frameworks */,
@@ -742,6 +797,12 @@
 		4FC1F8D74952C9154098A500 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CD8E3F32205A8142001087A9 /* CoreGraphics.framework */,
+				CD8E3F30205A813C001087A9 /* Foundation.framework */,
+				CD8E3F2E205A8135001087A9 /* UIKit.framework */,
+				CD8E3F2C205A812D001087A9 /* Accelerate.framework */,
+				CD8E3F2A205A8121001087A9 /* CoreImage.framework */,
+				CD8E3F28205A811A001087A9 /* QuartzCore.framework */,
 				CDE89B22205A5F1700B8B333 /* AssetsLibrary.framework */,
 				CDE89B20205A5F0900B8B333 /* CoreVideo.framework */,
 				CDE89B1E205A5F0200B8B333 /* CoreAudio.framework */,
@@ -1264,9 +1325,38 @@
 			path = "pili-librtmp";
 			sourceTree = "<group>";
 		};
+		CD8E3F02205A7F30001087A9 /* CvEffects */ = {
+			isa = PBXGroup;
+			children = (
+				CD8E3F03205A7F30001087A9 /* scratches.png */,
+				CD8E3F04205A7F30001087A9 /* lena.jpg */,
+				CD8E3F05205A7F30001087A9 /* Processing.cpp */,
+				CD8E3F06205A7F30001087A9 /* lbpcascade_frontalface.xml */,
+				CD8E3F07205A7F30001087A9 /* haarcascade_mcs_eyepair_big.xml */,
+				CD8E3F08205A7F30001087A9 /* RetroFilter.hpp */,
+				CD8E3F09205A7F30001087A9 /* FaceAnimator.cpp */,
+				CD8E3F0A205A7F30001087A9 /* PostcardPrinter.cpp */,
+				CD8E3F0B205A7F30001087A9 /* Processing_Accelerate.cpp */,
+				CD8E3F0C205A7F30001087A9 /* mustache.png */,
+				CD8E3F0D205A7F30001087A9 /* CvEffects-Prefix.pch */,
+				CD8E3F0E205A7F30001087A9 /* haarcascade_mcs_mouth.xml */,
+				CD8E3F0F205A7F30001087A9 /* RetroFilter.cpp */,
+				CD8E3F10205A7F30001087A9 /* fuzzy_border.png */,
+				CD8E3F11205A7F30001087A9 /* FaceAnimator.hpp */,
+				CD8E3F12205A7F30001087A9 /* PostcardPrinter.hpp */,
+				CD8E3F13205A7F30001087A9 /* texture.jpg */,
+				CD8E3F14205A7F30001087A9 /* Processing.hpp */,
+				CD8E3F15205A7F30001087A9 /* Processing_NEON.cpp */,
+				CD8E3F16205A7F30001087A9 /* text.png */,
+				CD8E3F17205A7F30001087A9 /* glasses.png */,
+			);
+			path = CvEffects;
+			sourceTree = "<group>";
+		};
 		CD937A7A20525A1D002B388A = {
 			isa = PBXGroup;
 			children = (
+				CD8E3F02205A7F30001087A9 /* CvEffects */,
 				CD8E3C66205A78F8001087A9 /* LFLiveKit */,
 				CD8E3C62205A77DF001087A9 /* opencv2.framework */,
 				CDE89B24205A600000B8B333 /* category */,
@@ -1478,11 +1568,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8E3F1C205A7F30001087A9 /* haarcascade_mcs_eyepair_big.xml in Resources */,
+				CD8E3F18205A7F30001087A9 /* scratches.png in Resources */,
 				CD937A9320525A1E002B388A /* LaunchScreen.storyboard in Resources */,
+				CD8E3F20205A7F30001087A9 /* mustache.png in Resources */,
+				CD8E3F26205A7F30001087A9 /* text.png in Resources */,
+				CD8E3F27205A7F30001087A9 /* glasses.png in Resources */,
 				CD937A9020525A1E002B388A /* Assets.xcassets in Resources */,
 				CDE89B35205A600000B8B333 /* haarcascade_frontalface_alt2.xml in Resources */,
+				CD8E3F24205A7F30001087A9 /* texture.jpg in Resources */,
 				CDE89B36205A600000B8B333 /* haarcascade_eye.xml in Resources */,
+				CD8E3F21205A7F30001087A9 /* haarcascade_mcs_mouth.xml in Resources */,
+				CD8E3F23205A7F30001087A9 /* fuzzy_border.png in Resources */,
+				CD8E3F19205A7F30001087A9 /* lena.jpg in Resources */,
 				CD937A8E20525A1E002B388A /* Main.storyboard in Resources */,
+				CD8E3F1B205A7F30001087A9 /* lbpcascade_frontalface.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1596,6 +1696,7 @@
 				CD8E3EA2205A78F9001087A9 /* GPUImageLowPassFilter.m in Sources */,
 				CD8E3E81205A78F9001087A9 /* GPUImageView.m in Sources */,
 				CD8E3E41205A78F8001087A9 /* GPUImagePixellatePositionFilter.m in Sources */,
+				CD8E3F1E205A7F30001087A9 /* PostcardPrinter.cpp in Sources */,
 				CD8E3E59205A78F9001087A9 /* GPUImagePolarPixellateFilter.m in Sources */,
 				CD8E3E64205A78F9001087A9 /* GPUImage3x3TextureSamplingFilter.m in Sources */,
 				CD8E3E45205A78F9001087A9 /* GPUImageiOSBlurFilter.m in Sources */,
@@ -1632,6 +1733,7 @@
 				CD8E3E80205A78F9001087A9 /* GPUImagePicture+TextureSubimage.m in Sources */,
 				CDE89B37205A600000B8B333 /* UIView+YYAdd.m in Sources */,
 				CD8E3E9C205A78F9001087A9 /* GPUImageBuffer.m in Sources */,
+				CD8E3F1F205A7F30001087A9 /* Processing_Accelerate.cpp in Sources */,
 				CD8E3E3C205A78F8001087A9 /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
 				CD8E3E88205A78F9001087A9 /* GPUImageLuminosity.m in Sources */,
 				CD8E3E3D205A78F8001087A9 /* GPUImageSolarizeFilter.m in Sources */,
@@ -1640,6 +1742,7 @@
 				CD8E3E19205A78F8001087A9 /* LFStreamingBuffer.m in Sources */,
 				CD8E3E44205A78F9001087A9 /* GPUImageSketchFilter.m in Sources */,
 				CD8E3E72205A78F9001087A9 /* GPUImageLanczosResamplingFilter.m in Sources */,
+				CD8E3F1D205A7F30001087A9 /* FaceAnimator.cpp in Sources */,
 				CD8E3E11205A78F8001087A9 /* LFAudioFrame.m in Sources */,
 				CD8E3E3E205A78F8001087A9 /* GPUImageFASTCornerDetectionFilter.m in Sources */,
 				CD8E3EA8205A78F9001087A9 /* GPUImageLinearBurnBlendFilter.m in Sources */,
@@ -1678,6 +1781,7 @@
 				CD8E3E4D205A78F9001087A9 /* GPUImageHistogramGenerator.m in Sources */,
 				CD8E3E93205A78F9001087A9 /* GPUImageHazeFilter.m in Sources */,
 				CD8E3EBC205A78F9001087A9 /* GPUImageHighlightShadowFilter.m in Sources */,
+				CD8E3F1A205A7F30001087A9 /* Processing.cpp in Sources */,
 				CD8E3E7D205A78F9001087A9 /* GPUImageContext.m in Sources */,
 				CD937ABD205273F0002B388A /* OnlyLiveView.m in Sources */,
 				CD8E3E3B205A78F8001087A9 /* GPUImageLevelsFilter.m in Sources */,
@@ -1697,6 +1801,7 @@
 				CD8E3E79205A78F9001087A9 /* GPUImageSourceOverBlendFilter.m in Sources */,
 				CD8E3E1B205A78F8001087A9 /* LFGPUImageEmptyFilter.m in Sources */,
 				CD8E3E87205A78F9001087A9 /* GPUImageGaussianSelectiveBlurFilter.m in Sources */,
+				CD8E3F25205A7F30001087A9 /* Processing_NEON.cpp in Sources */,
 				CD8E3E2D205A78F8001087A9 /* GPUImageHighPassFilter.m in Sources */,
 				CD8E3E77205A78F9001087A9 /* GPUImageLaplacianFilter.m in Sources */,
 				CD8E3E39205A78F8001087A9 /* GPUImageGrayscaleFilter.m in Sources */,
@@ -1748,6 +1853,7 @@
 				CD8E3EBF205A78F9001087A9 /* GPUImageMosaicFilter.m in Sources */,
 				CD8E3E56205A78F9001087A9 /* GPUImageMultiplyBlendFilter.m in Sources */,
 				CD8E3E36205A78F8001087A9 /* GPUImageTwoInputFilter.m in Sources */,
+				CD8E3F22205A7F30001087A9 /* RetroFilter.cpp in Sources */,
 				CD8E3E84205A78F9001087A9 /* GPUImageGaussianBlurFilter.m in Sources */,
 				CD8E3E34205A78F8001087A9 /* GPUImageUIElement.m in Sources */,
 				CD8E3E50205A78F9001087A9 /* GPUImageExclusionBlendFilter.m in Sources */,

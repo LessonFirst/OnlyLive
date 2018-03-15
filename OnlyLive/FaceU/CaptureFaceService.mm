@@ -13,7 +13,9 @@
 #endif
 
 #import "UIImage+OpenCV.h"
+#import "FaceAnimator.hpp"
 using namespace cv;
+
 
 @interface CaptureFaceService()
 {
@@ -22,6 +24,8 @@ using namespace cv;
     CascadeClassifier  _faceCascade;
     BOOL               _haveTask;
     BOOL               _isCaptureing;
+    FaceAnimator::Parameters parameters;
+    cv::Ptr<FaceAnimator> faceAnimator;
 }
 
 
@@ -59,8 +63,56 @@ using namespace cv;
         cv::Mat image = [UIImage CVMatFromCMSampleBufferRef:sampleBuffer];
         [self processImage:image];
     }
-
 }
+
+
+#pragma mark - 新的方式
+#if 1
+#define TS(name) int64 t_##name = cv::getTickCount()
+#define TE(name) printf("TIMER_" #name ": %.2fms\n", \
+1000.*((cv::getTickCount() - t_##name) / cv::getTickFrequency()))
+#else
+#define TS(name)
+#define TE(name)
+#endif
+
+// 处理图层
+- (void)processImage:(cv::Mat&)image
+{
+    TS(DetectAndAnimateFaces);
+    faceAnimator->detectAndAnimateFaces(image);
+    TE(DetectAndAnimateFaces);
+    
+}
+
+- (void)setupDector{
+    // Load images
+    UIImage* resImage = [UIImage imageNamed:@"glasses.png"];
+    UIImageToMat(resImage, parameters.glasses, true);
+    cvtColor(parameters.glasses, parameters.glasses, CV_BGRA2RGBA);
+    
+    resImage = [UIImage imageNamed:@"mustache.png"];
+    UIImageToMat(resImage, parameters.mustache, true);
+    cvtColor(parameters.mustache, parameters.mustache, CV_BGRA2RGBA);
+    
+    // Load Cascade Classisiers
+    NSString* filename = [[NSBundle mainBundle]
+                          pathForResource:@"lbpcascade_frontalface"
+                          ofType:@"xml"];
+    parameters.faceCascade.load([filename UTF8String]);
+    
+    filename = [[NSBundle mainBundle]
+                pathForResource:@"haarcascade_mcs_eyepair_big"
+                ofType:@"xml"];
+    parameters.eyesCascade.load([filename UTF8String]);
+    
+    filename = [[NSBundle mainBundle]
+                pathForResource:@"haarcascade_mcs_mouth"
+                ofType:@"xml"];
+    parameters.mouthCascade.load([filename UTF8String]);
+    
+}
+
 
 //设置检测器
 - (void)setupDetector{
@@ -187,32 +239,32 @@ using namespace cv;
 };
 
 #pragma mark - opencvdelegate
-- (void)processImage:(cv::Mat &)image{
-
-    _haveTask = YES;
-    if ([self checkCaptureFaceIsOutTime]) {
-        //超时处理 -- 停止检测 -- 代理回调
-        [self handleCaptureFaceTimeOut];
-        _haveTask = NO;
-        return;
-    }
-    std::vector<cv::Rect> rects = [self checkFacesWithImage:image];
-    
-    if (![self checkFaceIsOkAndCallBackProgressWithRects:rects]) {
-        _haveTask = NO;
-        return;
-    }
-    
-    [self handleCaptureProgressCallBackWithFaceProgress:1.0 andEyeProgress:0.7 andCaptureFaceStatus:captureFaceStatus_NoBlink];
-//    [self checkBlickWithRects:rects andImage:image];
-    
-    if ([self checkBlink]){
-        [self handleCaptureProgressCallBackWithFaceProgress:1.0 andEyeProgress:1.0 andCaptureFaceStatus:captureFaceStatus_OK];
-        [self handleCaptureCompleteCallBackWithError:nil andResultImage:[self getResultImageFormMat:image]];
-        [self stop];
-    }
-    _haveTask = NO;
-}
+//- (void)processImage:(cv::Mat &)image{
+//
+//    _haveTask = YES;
+//    if ([self checkCaptureFaceIsOutTime]) {
+//        //超时处理 -- 停止检测 -- 代理回调
+//        [self handleCaptureFaceTimeOut];
+//        _haveTask = NO;
+//        return;
+//    }
+//    std::vector<cv::Rect> rects = [self checkFacesWithImage:image];
+//
+//    if (![self checkFaceIsOkAndCallBackProgressWithRects:rects]) {
+//        _haveTask = NO;
+//        return;
+//    }
+//
+//    [self handleCaptureProgressCallBackWithFaceProgress:1.0 andEyeProgress:0.7 andCaptureFaceStatus:captureFaceStatus_NoBlink];
+////    [self checkBlickWithRects:rects andImage:image];
+//
+//    if ([self checkBlink]){
+//        [self handleCaptureProgressCallBackWithFaceProgress:1.0 andEyeProgress:1.0 andCaptureFaceStatus:captureFaceStatus_OK];
+//        [self handleCaptureCompleteCallBackWithError:nil andResultImage:[self getResultImageFormMat:image]];
+//        [self stop];
+//    }
+//    _haveTask = NO;
+//}
 
 
 

@@ -9,6 +9,8 @@
 #import "OnlyLiveSession.h"
 #import "LFLiveKit.h"
 #import "CaptureFaceService.h"
+#import "UIImage+OpenCV.h"
+
 
 inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
     if (elapsed_milli <= 0) {
@@ -158,20 +160,23 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
     NSLog(@"errorCode: %ld", errorCode);
 }
 
+
 // 传出的sampleBuffer
 - (void)WillOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer{
     
     if (!_faceService) {
         _faceService = [CaptureFaceService new];
     }
-    
+
     [_faceService startDetectionFaceWithCMSampleBufferRef:sampleBuffer andCaptureFaceProgressBlock:^(float faceProgress, float eyeProgress, captureFaceStatus captureFaceStatus) {
-        
+
     } andCompleteBlock:^(UIImage *resultImage, NSError *error) {
-        
+
     }];
     
 }
+
+
 
 #pragma mark -- Public Method
 - (void)requestAccessForVideo {
