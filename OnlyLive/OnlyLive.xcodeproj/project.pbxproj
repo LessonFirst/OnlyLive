@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7EB977E53CD66BD5EEE5BD86 /* libPods-OnlyLive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F21573D26BA18D647D430EA /* libPods-OnlyLive.a */; };
+		CD8E3C63205A77DF001087A9 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD8E3C62205A77DF001087A9 /* opencv2.framework */; };
 		CD937A8820525A1D002B388A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A8720525A1D002B388A /* AppDelegate.m */; };
 		CD937A8B20525A1E002B388A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD937A8A20525A1E002B388A /* ViewController.m */; };
 		CD937A8E20525A1E002B388A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD937A8C20525A1E002B388A /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 /* Begin PBXFileReference section */
 		12E93DE74A310CDB91072FBC /* Pods-OnlyLive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlyLive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnlyLive/Pods-OnlyLive.debug.xcconfig"; sourceTree = "<group>"; };
 		7F21573D26BA18D647D430EA /* libPods-OnlyLive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OnlyLive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD8E3C62205A77DF001087A9 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		CD937A8320525A1D002B388A /* OnlyLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnlyLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD937A8620525A1D002B388A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CD937A8720525A1D002B388A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD8E3C63205A77DF001087A9 /* opencv2.framework in Frameworks */,
 				CDE89B23205A5F1700B8B333 /* AssetsLibrary.framework in Frameworks */,
 				CDE89B21205A5F0A00B8B333 /* CoreVideo.framework in Frameworks */,
 				CDE89B1F205A5F0200B8B333 /* CoreAudio.framework in Frameworks */,
@@ -141,6 +144,7 @@
 		CD937A7A20525A1D002B388A = {
 			isa = PBXGroup;
 			children = (
+				CD8E3C62205A77DF001087A9 /* opencv2.framework */,
 				CDE89B24205A600000B8B333 /* category */,
 				CDE89B30205A600000B8B333 /* FaceU */,
 				CD937A8520525A1D002B388A /* OnlyLive */,
