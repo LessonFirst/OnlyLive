@@ -164,6 +164,8 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
 // 传出的sampleBuffer
 - (void)WillOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer{
     
+    if(sampleBuffer)
+    
     if (!_faceService) {
         _faceService = [CaptureFaceService new];
     }

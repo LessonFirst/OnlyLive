@@ -46,7 +46,7 @@ using namespace cv;
 {
     self = [super init];
     if (self) {
-        [self setupDetector];
+        [self setupDector];
     }
     return self;
 }
@@ -55,6 +55,7 @@ using namespace cv;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
+        faceAnimator = new FaceAnimator(parameters);
         self.captureFaceProgressBlock = captureFaceProgressBlock;
         self.captureFaceCompleteResultBlock = captureFaceCompleteResultBlock;
     });
