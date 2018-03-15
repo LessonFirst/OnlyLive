@@ -18,7 +18,7 @@
 #import "GPUImage.h"
 #endif
 
-@interface LFVideoCapture ()
+@interface LFVideoCapture ()<GPUImageVideoCameraDelegate>
 
 @property (nonatomic, strong) GPUImageVideoCamera *videoCamera;
 @property (nonatomic, strong) LFGPUImageBeautyFilter *beautyFilter;
@@ -79,6 +79,7 @@
         _videoCamera.horizontallyMirrorFrontFacingCamera = NO;
         _videoCamera.horizontallyMirrorRearFacingCamera = NO;
         _videoCamera.frameRate = (int32_t)_configuration.videoFrameRate;
+        _videoCamera.delegate = self;
     }
     return _videoCamera;
 }
@@ -266,6 +267,16 @@
     }
     return _movieWriter;
 }
+
+#pragma mark - <GPUImageVideoCameraDelegate>
+- (void)willOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer{
+    
+    if ([self.delegate respondsToSelector:@selector(captureOutpuWillOutputSampleBuffer:)]) {
+        [self.delegate captureOutpuWillOutputSampleBuffer:sampleBuffer];
+    }
+    
+}
+
 
 #pragma mark -- Custom Method
 - (void)processVideo:(GPUImageOutput *)output {

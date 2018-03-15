@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  OnlyLive
+//
+//  Created by only on 2018/3/15.
+//  Copyright © 2018年 only. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __cplusplus
+#import <opencv2/opencv.hpp>
+#import <opencv2/stitching/detail/blenders.hpp>
+#import <opencv2/stitching/detail/exposure_compensate.hpp>
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+#endif /* PrefixHeader_pch */

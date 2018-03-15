@@ -9,7 +9,6 @@
 
 @protocol OnlyLiveSessionDelegate <NSObject>
 
-
 - (void)OnlyLiveCallBackMessage:(NSString *)callBackMessage;
 
 @end

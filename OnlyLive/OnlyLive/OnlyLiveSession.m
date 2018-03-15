@@ -8,6 +8,7 @@
 
 #import "OnlyLiveSession.h"
 #import <LFLiveKit.h>
+#import "CaptureFaceService.h"
 
 inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
     if (elapsed_milli <= 0) {
@@ -34,6 +35,7 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
 @property (assign, nonatomic)  BOOL isPlaying;
 @property (strong, nonatomic)  LFLiveSession *session;
 @property (weak, nonatomic)  id delegate;
+@property (strong,nonatomic) CaptureFaceService *faceService;
 
 
 @end
@@ -57,6 +59,7 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
         @throw @"需要创建一个默认的session or 需要一个播放streamString";
         return;
     }
+    NSLog(@"当前的streamString:%@",streamString);
     LFLiveStreamInfo *info = [LFLiveStreamInfo new];
     info.url = streamString;
     [self.session startLive:info];
@@ -76,20 +79,26 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
     self.session.captureDevicePosition = (devicePositon == AVCaptureDevicePositionBack) ? AVCaptureDevicePositionFront : AVCaptureDevicePositionBack;
     
 }
-
-
-
 #pragma mark - 设置默认的Session
 - (void)setDefaultSessionWithdelegate:(id<OnlyLiveSessionDelegate>)delegate preView:(UIView*)preView{
     if (!_session) {
         self.delegate = delegate;
         /***   默认分辨率368 ＊ 640  音频：44.1 iphone6以上48  双声道  方向竖屏 ***/
         LFLiveVideoConfiguration *videoConfiguration = [LFLiveVideoConfiguration new];
-        videoConfiguration.videoSize = CGSizeMake(preView.bounds.size.width, preView.bounds.size.height);
-        videoConfiguration.videoBitRate = 800*1024;
-        videoConfiguration.videoMaxBitRate = 1000*1024;
-        videoConfiguration.videoMinBitRate = 500*1024;
-        videoConfiguration.videoFrameRate = 24;
+        videoConfiguration.videoFrameRate = 15;
+        videoConfiguration.videoMaxFrameRate = 15;
+        videoConfiguration.videoMinFrameRate = 10;
+        videoConfiguration.videoBitRate = 1000 * 1000;
+        videoConfiguration.videoMaxBitRate = 1200 * 1000;
+        videoConfiguration.videoMinBitRate = 500 * 1000;
+        videoConfiguration.videoSize = CGSizeMake(720, 1280);
+        
+        
+//        videoConfiguration.videoSize = CGSizeMake(preView.bounds.size.width, preView.bounds.size.height);
+//        videoConfiguration.videoBitRate = 800*1024;
+//        videoConfiguration.videoMaxBitRate = 1000*1024;
+//        videoConfiguration.videoMinBitRate = 500*1024;
+//        videoConfiguration.videoFrameRate = 24;
         videoConfiguration.videoMaxKeyframeInterval = 48;
         videoConfiguration.outputImageOrientation = UIInterfaceOrientationPortrait;
         videoConfiguration.autorotate = NO;
@@ -149,6 +158,21 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
     NSLog(@"errorCode: %ld", errorCode);
 }
 
+// 传出的sampleBuffer
+- (void)WillOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer{
+    
+    if (!_faceService) {
+        _faceService = [CaptureFaceService new];
+    }
+    
+    [_faceService startDetectionFaceWithCMSampleBufferRef:sampleBuffer andCaptureFaceProgressBlock:^(float faceProgress, float eyeProgress, captureFaceStatus captureFaceStatus) {
+        
+    } andCompleteBlock:^(UIImage *resultImage, NSError *error) {
+        
+    }];
+    
+}
+
 #pragma mark -- Public Method
 - (void)requestAccessForVideo {
     __weak typeof(self) _self = self;
@@ -199,6 +223,13 @@ inline static NSString *formatedSpeed(float bytes, float elapsed_milli) {
         default:
             break;
     }
+}
+-(CaptureFaceService *)faceService
+{
+    if(!_faceService){
+        _faceService = [CaptureFaceService new];
+    }
+    return _faceService;
 }
 
 #pragma mark - delloc
